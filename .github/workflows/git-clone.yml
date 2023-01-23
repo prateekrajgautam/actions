@@ -1,0 +1,22 @@
+name: git-clone
+author: Dr. Prateek Raj Gautam
+
+
+on: workflow_call
+
+jobs:
+  echo-variables:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo env
+        run: |
+          env
+          pwd
+          ls -a
+          echo ${{secrets.GITHUB_TOKEN}}
+          echo ${{github}}
+          
+      - name: cloning repo ${{reponame}}
+        run: echo "reached here"
+
+
