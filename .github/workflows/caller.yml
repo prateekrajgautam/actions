@@ -1,4 +1,4 @@
-name: test action manually
+name: caller
 
 on: workflow_dispatch
 
@@ -8,6 +8,6 @@ jobs:
 
     steps:
       - name: calling clone
-      - uses: ./.github/workflows/clone.yml@main
+        uses: ./.github/workflows/clone.yml@main
         with: ${{ env }}
 
