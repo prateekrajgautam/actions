@@ -8,6 +8,6 @@ jobs:
 
     steps:
       - name: calling clone
-        uses: ./.github/workflows/clone.yml@main
+        uses: prateekrajgautam/actions/.github/workflows/clone.yml@main
         with: ${{ env }}
 
